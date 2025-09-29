@@ -13,21 +13,21 @@ int main() {
     cout << "Ââåä³òü x: ";cin >> x;
     cout << "Ââåä³òü R: ";cin >> R;
 
-    if (x <= -2 * R) 
+    if (x <= -8) 
         y = -R;
     else 
-        if (x > -2 * R && x <= -R) 
-        y = x + R;
+        if (x > -8 && x <= -R) 
+        y = (2.0/(8-R))*(x+8)-2;
     else 
             if (x > -R && x <= R) 
         y = -sqrt(R * R - x * x);
     
     else
-                if (x > R && x <= 2 * R) 
-        y = (2.0 / R) * (x - R);
+                if (x >= R && x <5 ) 
+        y = (3.0/(5- R)) * (x - R);
     
-    else 
-        y = 2;
+    else // x>=5
+        y = 3;
     
 
     cout << "y = " << y << endl;
